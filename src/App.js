@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import EventClass from './HandelEventClass';
+import BindEvent from './Eventbind';
+// import EventClass from './HandelEventClass';
 // import Handeler from './HandelEvents';
 
 class App extends Component {
@@ -12,7 +13,8 @@ class App extends Component {
 
   render() {
     return (<div>
-      <EventClass />
+      <BindEvent />
+      {/* <EventClass /> */}
       {/* <Handeler /> */}
     </div>);
   }
