@@ -6,7 +6,11 @@ class LifeCyle extends Component {
     this.state = {};
   }
   render() {
-    return <></>;
+    return (
+      <>
+        <div></div>
+      </>
+    );
   }
 }
 
