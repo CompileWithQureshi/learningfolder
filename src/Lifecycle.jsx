@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import LifeCyleB from "./LifecycleB";
 
-class LifeCyle extends Component {
+class LifeCyleA extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,8 +18,13 @@ class LifeCyle extends Component {
   }
   render() {
     console.log(`lifecycleA render`);
-    return <div>Lifecycle A</div>;
+    return (
+      <div>
+        <div>Lifecycle A</div>
+        <LifeCyleB />
+      </div>
+    );
   }
 }
 
-export default LifeCyle;
+export default LifeCyleA;

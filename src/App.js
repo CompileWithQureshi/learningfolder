@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import LifeCyleA from './Lifecycle';
 // import BindEvent from './Eventbind';
 // import Form from './forms';
-import LifeCyle from './Lifecycle';
 // import EventClass from './HandelEventClass';
 // import Handeler from './HandelEvents';
 
@@ -14,7 +14,7 @@ class App extends Component {
 
   render() {
     return (<div>
-      <LifeCyle />
+      <LifeCyleA />
       {/* <Form /> */}
       {/* <BindEvent /> */}
       {/* <EventClass /> */}
