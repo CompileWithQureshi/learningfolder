@@ -15,6 +15,17 @@ class LifeCyleB extends Component {
   componentDidMount() {
     console.log(`lifecycleB componentDidMount`);
   }
+  shouldComponentUpdate() {
+    console.log(`lifecycleB componentDidMount`);
+    return true;
+  }
+  getSnapshotBeforeUpdate() {
+    console.log(`lifecycleB componentDidMount`);
+    return null;
+  }
+  componentDidUpdate() {
+    console.log(`lifecycleB componentDidMount`);
+  }
   render() {
     console.log(`lifecycleB render`);
     return (

@@ -16,11 +16,26 @@ class LifeCyleA extends Component {
   componentDidMount() {
     console.log(`lifecycle componentDidMount`);
   }
+  shouldComponentUpdate() {
+    console.log(`lifecycle componentDidMount`);
+    return true;
+  }
+  getSnapshotBeforeUpdate() {
+    console.log(`lifecycle componentDidMount`);
+    return null;
+  }
+  componentDidUpdate() {
+    console.log(`lifecycle componentDidMount`);
+  }
+  Changestate = () => {
+    this.setState({ name: "Codeveloction" });
+  };
   render() {
     console.log(`lifecycleA render`);
     return (
       <div>
         <div>Lifecycle A</div>
+        <button onClick={this.Changestate}>Change state</button>
         <LifeCyleB />
       </div>
     );
