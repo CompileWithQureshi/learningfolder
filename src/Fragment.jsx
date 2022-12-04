@@ -1,10 +1,15 @@
 import React from "react";
+import Cloumn from "./column";
 
 function Fragment() {
   return (
     <React.Fragment>
       <table>
-        <td></td>
+        <tbody>
+          <tr>
+            <Cloumn />
+          </tr>
+        </tbody>
       </table>
     </React.Fragment>
   );

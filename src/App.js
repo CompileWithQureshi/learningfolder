@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LifeCyleA from './Lifecycle';
+// import LifeCyleA from './Lifecycle';
 import Fragment from './Fragment';
 // import BindEvent from './Eventbind';
 // import Form from './forms';
