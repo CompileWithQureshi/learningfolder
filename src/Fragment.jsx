@@ -1,7 +1,13 @@
 import React from "react";
 
 function Fragment() {
-  return <div>Fragment Demo</div>;
+  return (
+    <React.Fragment>
+      <table>
+        <td></td>
+      </table>
+    </React.Fragment>
+  );
 }
 
 export default Fragment;
