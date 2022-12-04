@@ -3,7 +3,7 @@ import Cloumn from "./column";
 
 function Fragment() {
   return (
-    <React.Fragment>
+    <>
       <table>
         <tbody>
           <tr>
@@ -11,7 +11,7 @@ function Fragment() {
           </tr>
         </tbody>
       </table>
-    </React.Fragment>
+    </>
   );
 }
 
