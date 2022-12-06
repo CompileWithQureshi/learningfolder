@@ -1,9 +1,10 @@
 import React, { PureComponent } from "react";
 
 class PureComp extends PureComponent {
-  state = {};
   render() {
-    return <>Pure Component {this.state.name}</>;
+    console.log(`this is Pure Comp`);
+
+    return <>Pure Component {this.props.name}</>;
   }
 }
 

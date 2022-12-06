@@ -10,13 +10,16 @@ class ParentComp extends Component {
   componentDidMount() {
     setInterval(() => {
       this.setState({ name: "sajid" });
-    }, 2000);
+    }, 100000000000);
   }
   render() {
+    console.log(`This is Parent comp`);
     return (
       <>
         Parent Component
+        <br />
         <RegComp name={this.state.name} />
+        <br />
         <PureComp name={this.state.name} />
       </>
     );
