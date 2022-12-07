@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 // import LifeCyleA from './Lifecycle';
 // import Fragment from './Fragment';
-import ParentComp from './ParentComp';
+// import ParentComp from './ParentComp';
 // import BindEvent from './Eventbind';
 // import Form from './forms';
 // import EventClass from './HandelEventClass';
 // import Handeler from './HandelEvents';
 import './App.css'
+import CodeBundel from './CodeBundle';
 
 class App extends Component {
   constructor(props) {
@@ -17,8 +18,9 @@ class App extends Component {
 
   render() {
     return (<div className='App'>
+      <CodeBundel />
       {/* <Fragment /> */}
-      <ParentComp />
+      {/* <ParentComp /> */}
       {/* <LifeCyleA /> */}
       {/* <Form /> */}
       {/* <BindEvent /> */}
