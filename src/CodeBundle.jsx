@@ -1,13 +1,10 @@
 import React from "react";
-import { Add } from "./Mat";
+import("./Mat").then((math) => {
+  console.log(math.Add(16, 26));
+});
 
-console.warn(Add(10, 30));
 function CodeBundel() {
-  return (
-    <>
-      <h1>{Add(10, 30)}</h1>
-    </>
-  );
+  return <></>;
 }
 
 export default CodeBundel;
