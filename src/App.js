@@ -20,7 +20,7 @@ class App extends Component {
 
   render() {
     return (<div className='App'>
-      <Suspense fallback={<div>Loding....</div>}><First /></Suspense>
+      <Suspense fallback={<h1 style={{ color: "red" }}>Loding....</h1>}><First /></Suspense>
 
       {/* <CodeBundel /> */}
       <Secound />
