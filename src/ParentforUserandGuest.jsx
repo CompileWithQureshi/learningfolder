@@ -8,7 +8,7 @@ class Parent extends Component {
   render() {
     return (
       <>
-        <h2>Parent component</h2>
+        <h2>Parent component name :{this.state.name}</h2>
         <User name={this.state.name} />
       </>
     );

@@ -1,4 +1,4 @@
-import React, { Component, Suspense } from 'react';
+import React, { Component } from 'react';
 // import LifeCyleA from './Lifecycle';
 // import Fragment from './Fragment';
 // import ParentComp from './ParentComp';
@@ -7,8 +7,9 @@ import React, { Component, Suspense } from 'react';
 // import EventClass from './HandelEventClass';
 // import Handeler from './HandelEvents';
 import './App.css'
-import Secound from './Secound';
-const First = React.lazy(() => import('./First'))
+import Parent from './ParentforUserandGuest';
+// import Secound from './Secound';
+// const First = React.lazy(() => import('./First'))
 // import CodeBundel from './CodeBundle';
 
 class App extends Component {
@@ -20,10 +21,10 @@ class App extends Component {
 
   render() {
     return (<div className='App'>
-      <Suspense fallback={<h1 style={{ color: "red" }}>Loding....</h1>}><First /></Suspense>
-
+      {/* <Suspense fallback={<h1 style={{ color: "red" }}>Loding....</h1>}><First /></Suspense> */}
+      <Parent />
       {/* <CodeBundel /> */}
-      <Secound />
+      {/* <Secound /> */}
       {/* <Fragment /> */}
       {/* <ParentComp /> */}
       {/* <LifeCyleA /> */}

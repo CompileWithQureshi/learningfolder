@@ -4,8 +4,7 @@ class Guest extends Component {
   render() {
     return (
       <>
-        <h3>Guest Component </h3>
-        <h4>{this.props.nm}</h4>
+        <h3>Guest Component : {this.props.nm}</h3>
       </>
     );
   }
