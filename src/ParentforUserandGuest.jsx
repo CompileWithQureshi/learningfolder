@@ -6,7 +6,12 @@ class Parent extends Component {
     name: "Sajid",
   };
   render() {
-    return <User name={this.state.name} />;
+    return (
+      <>
+        <h2>Parent component</h2>
+        <User name={this.state.name} />
+      </>
+    );
   }
 }
 
