@@ -3,3 +3,21 @@
   justify-content: center;
   align-items: center;
 }
+.Guest {
+  width: max-content;
+  background-color: brown;
+  color: aliceblue;
+  padding: 5px;
+}
+.User {
+  width: max-content;
+  background-color: rgb(95, 187, 230);
+  color: aliceblue;
+  padding: 5px;
+}
+.Parent {
+  width: max-content;
+  background-color: rgb(28, 32, 35);
+  color: aliceblue;
+  padding: 5px;
+}
