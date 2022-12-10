@@ -1,16 +1,19 @@
 import React, { Component } from "react";
 import User from "./User";
 
+export const Mycontext = React.createContext();
 class Parent extends Component {
   state = {
     name: "Sajid",
   };
   render() {
     return (
-      <>
-        <h2>Parent component name :{this.state.name}</h2>
-        <User name={this.state.name} />
-      </>
+      <div>
+        <h2>Parent component : {this.state.name}</h2>
+        <Mycontext.Provider value={this.state.name}>
+          <User />
+        </Mycontext.Provider>
+      </div>
     );
   }
 }
