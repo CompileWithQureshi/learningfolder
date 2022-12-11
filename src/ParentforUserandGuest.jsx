@@ -9,10 +9,17 @@ export default class Parent extends Component {
     name: "sajid",
     value: 1,
   };
+  handelClickContext = () => {
+    this.setState({ value: this.state.value + 1 });
+  };
   render() {
+    const contextValue = {
+      data: this.state,
+      handelClick: this.handelClickContext,
+    };
     return (
       <div>
-        <MyContext.Provider value={this.state}>
+        <MyContext.Provider value={contextValue}>
           <User />
         </MyContext.Provider>
       </div>

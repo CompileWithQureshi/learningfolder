@@ -9,7 +9,14 @@ class Guest extends Component {
       <div className="Guest">
         <h3>Guest Component</h3>
         <MyContext.Consumer>
-          {(data) => <h3>Name: {data}</h3>}
+          {({ data, handelClick }) => (
+            <div>
+              <h3>
+                Name: {data.name} value: {data.value}
+              </h3>
+              <button onClick={handelClick}>Change value</button>
+            </div>
+          )}
         </MyContext.Consumer>
       </div>
     );
