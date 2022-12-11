@@ -9,7 +9,7 @@ class Guest extends Component {
       <div className="Guest">
         <h3>Guest Component</h3>
         <MyContext.Consumer>
-          {(value) => [<h3>Name:{value}</h3>]}
+          {(data) => <h3>Name: {data}</h3>}
         </MyContext.Consumer>
       </div>
     );
