@@ -1,6 +1,8 @@
 /* eslint-disable react/jsx-pascal-case */
 import React, { Component } from "react";
 import { MyContext } from "./ParentforUserandGuest";
+import "./App.css";
+
 class Guest extends Component {
   render() {
     return (
