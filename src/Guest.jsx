@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-pascal-case */
 import React, { Component } from "react";
 import { MyContext } from "./ParentforUserandGuest";
 import "./App.css";
@@ -7,14 +6,12 @@ class Guest extends Component {
   render() {
     return (
       <div className="Guest">
-        <h3>Guest Component</h3>
         <MyContext.Consumer>
           {({ data, handelClick }) => (
             <div>
-              <h3>
-                Name: {data.name} value: {data.value}
-              </h3>
-              <button onClick={handelClick}>Change value</button>
+              <h3>UserName: {data.name} </h3>
+              <h3>Age: {data.Age}</h3>
+              <button onClick={handelClick}>Change Age</button>
             </div>
           )}
         </MyContext.Consumer>
