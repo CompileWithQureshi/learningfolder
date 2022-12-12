@@ -5,7 +5,8 @@ class ContexType extends Component {
         this.state = {}
     }
     render() {
-        return (  );
+        return (<>
+        </>);
     }
 }
 
