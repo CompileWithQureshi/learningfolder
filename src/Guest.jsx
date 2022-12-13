@@ -9,8 +9,12 @@ class Guest extends Component {
         <MyContext.Consumer>
           {({ data, handelClick }) => (
             <div>
-              <h3>UserName: {data.name} </h3>
-              <h3>Age: {data.Age}</h3>
+              <h3>
+                UserName: <span>{data.name}</span>{" "}
+              </h3>
+              <h3>
+                Age: <span>{data.Age}</span>
+              </h3>
               <button onClick={handelClick}>Change Age</button>
             </div>
           )}
