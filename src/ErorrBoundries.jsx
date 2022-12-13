@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Images from "./Images";
+import "./App.css";
 
 class ErrorBoundries extends Component {
   constructor(props) {
@@ -6,7 +8,15 @@ class ErrorBoundries extends Component {
     this.state = {};
   }
   render() {
-    return <></>;
+    return (
+      <>
+        <span>
+          <Images img="./logo512.png" />
+        </span>
+        <Images img="./logo192.png" />
+        <Images img="null" />
+      </>
+    );
   }
 }
 

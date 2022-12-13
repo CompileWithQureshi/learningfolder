@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 // import EventClass from './HandelEventClass';
 // import Handeler from './HandelEvents';
 import './App.css'
+import ErrorBoundries from './ErorrBoundries';
 // import Parent from './ParentforUserandGuest';
 // import Secound from './Secound';
 // const First = React.lazy(() => import('./First'))
@@ -19,6 +20,7 @@ class App extends Component {
     return (<div className='App'>
       {/* <Suspense fallback={<h1 style={{ color: "red" }}>Loding....</h1>}><First /></Suspense> */}
       {/* <Parent /> */}
+      <ErrorBoundries />
       {/* <CodeBundel /> */}
       {/* <Secound /> */}
       {/* <Fragment /> */}

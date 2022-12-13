@@ -32,13 +32,10 @@
 h3 {
   padding: 3px;
 }
-img {
-  width: fit-content;
-  height: 80vh;
-  border-radius: 10px;
-}
+
 span {
-  color: black;
+  background-color: rgb(66, 69, 2);
+  padding: 5px;
 }
 button {
   padding: 5px;
