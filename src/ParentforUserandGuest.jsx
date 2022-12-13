@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import User from "./User";
 import "./App.css";
+import { Provider } from "./ContextType";
 
-export const MyContext = React.createContext({ Name: "Qureshi", Value: "1" });
 export default class Parent extends Component {
   state = {
-    name: "Laiba",
+    name: "Laiba-hudan",
     Age: 2,
   };
   handelClickContext = () => {
@@ -18,11 +18,10 @@ export default class Parent extends Component {
     };
     return (
       <div className="Parent">
-        <h3>Laiba</h3>
         <img src="./Laib.jpg" alt="Img-Error" />
-        <MyContext.Provider value={Context}>
+        <Provider value={Context}>
           <User />
-        </MyContext.Provider>
+        </Provider>
       </div>
     );
   }

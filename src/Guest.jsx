@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { MyContext } from "./ParentforUserandGuest";
 import "./App.css";
+import { MyContext } from "./ContextType";
 
 class Guest extends Component {
   render() {
