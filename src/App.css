@@ -35,6 +35,8 @@ h3 {
 
 span {
   background-color: rgb(66, 69, 2);
+  color: black;
+  image-resolution: 20%;
   padding: 5px;
 }
 button {

@@ -9,6 +9,7 @@ export default class Images extends Component {
     const { img } = this.props;
     if (img === "null") {
       console.error(`image not found`);
+      throw new Error("Error ");
     }
     return (
       <>
