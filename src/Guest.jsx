@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import "./App.css";
-import { MyContext } from "./ContextType";
+import { Consumer } from "./ContextType";
 
 class Guest extends Component {
   render() {
     return (
       <div className="Guest">
-        <MyContext.Consumer>
+        <Consumer>
           {({ data, handelClick }) => (
             <div>
               <h3>
-                UserName: <span>{data.name}</span>{" "}
+                UserName: <span>{data.name}</span>
               </h3>
               <h3>
                 Age: <span>{data.Age}</span>
@@ -18,7 +18,7 @@ class Guest extends Component {
               <button onClick={handelClick}>Change Age</button>
             </div>
           )}
-        </MyContext.Consumer>
+        </Consumer>
       </div>
     );
   }
