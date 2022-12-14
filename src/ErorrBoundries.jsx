@@ -12,7 +12,7 @@ class ErrorBoundries extends Component {
     return (
       <>
         <Error>
-          <span>
+          <span className="Image-f1">
             <Images img="./logo512.png" />
           </span>
         </Error>
