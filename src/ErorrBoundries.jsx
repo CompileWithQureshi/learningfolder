@@ -19,9 +19,6 @@ class ErrorBoundries extends Component {
         <Error>
           <Images img="./logo192.png" />
         </Error>
-        <Error>
-          <Images img="null" />
-        </Error>
       </>
     );
   }

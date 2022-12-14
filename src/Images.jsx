@@ -12,9 +12,9 @@ export default class Images extends Component {
       throw new Error("Error ");
     }
     return (
-      <>
+      <div>
         <img src={this.props.img} alt="Img-erorr" width="100" height="100" />
-      </>
+      </div>
     );
   }
 }
