@@ -1,11 +1,11 @@
 import React from "react";
 
-function ChildRef() {
+const ChildRef = React.forwardRef((props, ref) => {
   return (
     <>
-      <input type="text" />
+      <input ref={ref} type="text" />
     </>
   );
-}
+});
 
 export default ChildRef;
