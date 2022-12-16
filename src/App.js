@@ -7,7 +7,8 @@ import React, { Component } from 'react';
 // import EventClass from './HandelEventClass';
 // import Handeler from './HandelEvents';
 import './App.css'
-import ErrorBoundries from './ErorrBoundries';
+import { ForwardRef } from './ForwardRef';
+// import ErrorBoundries from './ErorrBoundries';
 // import Parent from './ParentforUserandGuest';
 // import Secound from './Secound';
 // const First = React.lazy(() => import('./First'))
@@ -18,9 +19,10 @@ class App extends Component {
 
   render() {
     return (<div className='App'>
+      <ForwardRef />
       {/* <Suspense fallback={<h1 style={{ color: "red" }}>Loding....</h1>}><First /></Suspense> */}
       {/* <Parent /> */}
-      <ErrorBoundries />
+      {/* <ErrorBoundries /> */}
       {/* <CodeBundel /> */}
       {/* <Secound /> */}
       {/* <Fragment /> */}

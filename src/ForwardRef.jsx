@@ -3,6 +3,10 @@ import React, { Component } from "react";
 export class ForwardRef extends Component {
   state = {};
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <h1>Forward Ref</h1>
+      </div>
+    );
   }
 }
