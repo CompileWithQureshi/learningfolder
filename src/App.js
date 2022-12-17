@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 // import EventClass from './HandelEventClass';
 // import Handeler from './HandelEvents';
 import './App.css'
+import Test1 from './Test1';
 // import { ForwardRef } from './ForwardRef';
 // import ErrorBoundries from './ErorrBoundries';
 // import Parent from './ParentforUserandGuest';
@@ -19,6 +20,7 @@ class App extends Component {
 
   render() {
     return (<div className='App'>
+      <Test1 />
       {/* <ForwardRef /> */}
       {/* <Suspense fallback={<h1 style={{ color: "red" }}>Loding....</h1>}><First /></Suspense> */}
       {/* <Parent /> */}
