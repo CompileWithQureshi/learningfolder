@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class HOC extends Component {
+class HoverHeader extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,10 +16,10 @@ class HOC extends Component {
     const { count } = this.state;
     return (
       <>
-        <button onClick={this.increment}>Count {count} </button>
+        <h1 onMouseOver={this.increment}>Hover {count}</h1>
       </>
     );
   }
 }
 
-export default HOC;
+export default HoverHeader;
