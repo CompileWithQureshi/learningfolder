@@ -7,7 +7,8 @@ import React, { Component } from 'react';
 // import EventClass from './HandelEventClass';
 // import Handeler from './HandelEvents';
 import './App.css'
-import Example from './Hooks';
+import Integrating from './Integrating';
+// import Example from './Hooks';
 // import HOC from './Hoc';
 // import HoverHeader from './HoverHeader';
 
@@ -24,7 +25,8 @@ class App extends Component {
 
   render() {
     return (<div className='App'>
-      <Example />
+      {/* <Example /> */}
+      <Integrating />
       {/* <Test1 /> */}
       {/* <HOC /> */}
       {/* <HoverHeader /> */}
