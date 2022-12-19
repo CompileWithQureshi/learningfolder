@@ -3,6 +3,7 @@ import React from "react";
 
 function Example() {
   const [count, setCount] = useState(0);
+  console.log({ count });
   return (
     <>
       Count: {count}
