@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
+// import CodeBundel from './CodeBundle';
 // import LifeCyleA from './Lifecycle';
 // import Fragment from './Fragment';
 // import ParentComp from './ParentComp';
@@ -18,34 +19,33 @@ import TodoList from './jsxDepth';
 // import ErrorBoundries from './ErorrBoundries';
 // import Parent from './ParentforUserandGuest';
 // import Secound from './Secound';
-// const First = React.lazy(() => import('./First'))
-// import CodeBundel from './CodeBundle';
+const First = React.lazy(() => import('./First'))
 
 class App extends Component {
 
 
   render() {
     return (<div className='App'>
-      {/* <Example /> */}
-      {/* <Integrating /> */}
+      {/* <Example />
+      <Integrating /> */}
       <TodoList />
 
-      {/* <Test1 /> */}
-      {/* <HOC /> */}
-      {/* <HoverHeader /> */}
-      {/* <ForwardRef /> */}
-      {/* <Suspense fallback={<h1 style={{ color: "red" }}>Loding....</h1>}><First /></Suspense> */}
-      {/* <Parent /> */}
-      {/* <ErrorBoundries /> */}
-      {/* <CodeBundel /> */}
-      {/* <Secound /> */}
-      {/* <Fragment /> */}
-      {/* <ParentComp /> */}
-      {/* <LifeCyleA /> */}
-      {/* <Form /> */}
-      {/* <BindEvent /> */}
-      {/* <EventClass /> */}
-      {/* <Handeler /> */}
+      {/* <Test1 />
+      <HOC />
+      <HoverHeader />
+      <ForwardRef /> */}
+      <Suspense fallback={<h1 style={{ color: "red" }}>Loding....</h1>}><First /></Suspense>
+      {/* <Parent />
+      <ErrorBoundries />
+      <CodeBundel />
+      <Secound />
+      <Fragment />
+      <ParentComp />
+      <LifeCyleA />
+      <Form />
+      <BindEvent />
+      <EventClass />
+      <Handeler /> */}
     </div>);
   }
 }
